@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/products', productRoutes);
 
-app.use(notRound);
+app.use(notFound);
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
